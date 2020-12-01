@@ -54,15 +54,14 @@ menuItems[3].textContent = siteContent["nav"]["nav-item-4"];
 menuItems[4].textContent = siteContent["nav"]["nav-item-5"];
 menuItems[5].textContent = siteContent["nav"]["nav-item-6"];
 menuItems.forEach((element) => {
-  element.style.color = "green"
+  element.style.color = "green";
 });
 // menuItems.append("Chocolate");
 // menuItems.style.remove(hover);
 
-
 let heading1 = document.querySelector("h1");
 heading1.textContent = siteContent["cta"]["h1"];
-heading1.innerHTML=("DOM <br> IS <br> AWESOME!")
+heading1.innerHTML = "DOM <br> IS <br> AWESOME!";
 
 let startButton = document.querySelector("button");
 startButton.textContent = siteContent["cta"]["button"];
@@ -72,31 +71,35 @@ topImage.src = siteContent["cta"]["img-src"];
 
 let h4Content = document.querySelectorAll("h4");
 h4Content[0].textContent = siteContent["main-content"]["features-h4"];
-h4Content[0].nextSibling.textContent = siteContent["main-content"]["features-content"];
+h4Content[0].nextSibling.textContent =
+  siteContent["main-content"]["features-content"];
 h4Content[1].textContent = siteContent["main-content"]["about-h4"];
-h4Content[1].nextSibling.textContent = siteContent["main-content"]["about-content"];
+h4Content[1].nextSibling.textContent =
+  siteContent["main-content"]["about-content"];
 h4Content[2].textContent = siteContent["main-content"]["services-h4"];
-h4Content[2].nextSibling.textContent = siteContent["main-content"]["services-content"];
+h4Content[2].nextSibling.textContent =
+  siteContent["main-content"]["services-content"];
 h4Content[3].textContent = siteContent["main-content"]["product-h4"];
-h4Content[3].nextSibling.textContent = siteContent["main-content"]["product-content"];
+h4Content[3].nextSibling.textContent =
+  siteContent["main-content"]["product-content"];
 h4Content[4].textContent = siteContent["main-content"]["vision-h4"];
-h4Content[4].nextSibling.textContent = siteContent["main-content"]["vision-content"];
-
-let spacing = document.querySelector(".bottom-content");
-spacing.style.paddingRight= "4rem";
-
-
-let midImg = document.querySelector(".middle-img");
-  midImg.src= siteContent["main-content"]["middle-img-src"];
-
-
-let contactSection = document.body.children[0].children[3].children[0];
-contactSection.textContent = "Contact";
-contactSection.nextElementSibling.textContent = "123 Way 456 Street Somewhere, USA";
-const number = document.body.children[0].children[3].children[2];
-number.textContent = "1 (888) 888-8888";
-number.nextElementSibling.textContent = "sales@greatidea.io";
-
+h4Content[4].nextSibling.textContent =
+  siteContent["main-content"]["vision-content"];
+h4Content[5].textContent = siteContent["contact"]["contact-h4"];
 
 let newFooter = document.querySelector("footer");
 newFooter.textContent = "Copyright Great Idea! 2018";
+
+let spacing = document.querySelector(".bottom-content");
+spacing.style.paddingRight = "4rem";
+
+let midImg = document.querySelector(".middle-img");
+midImg.src = siteContent["main-content"]["middle-img-src"];
+
+// let contactSection = document.querySelector(".contact h4");
+// contactSection.textContent = siteContent["contact"]["contact-h4"];
+
+let number = document.querySelectorAll(".contact p");
+number[0].textContent = "123 Way 456 Street Somewhere, USA";
+number[1].textContent = "1 (888) 888-8888";
+number[2].textContent = "sales@greatidea.io";
